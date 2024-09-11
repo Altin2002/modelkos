@@ -3,12 +3,12 @@
     justify-content: space-between;
     align-items: center;
     background: #fff;
-    margin-right: 2%;
-    padding: max(1.5%, 2px) 4%;
+    // margin-right: 2%;
+    padding: 0.5% 3%;
     color: #111111;
     top: 0;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 8000;
 
     .mobile-menu-icon {
@@ -107,6 +107,7 @@
         margin-left: max(15px, 30px);
     }
 }
+
 
 @media(max-width: 1206px) {
     .nav {
