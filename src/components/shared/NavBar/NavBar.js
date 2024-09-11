@@ -14,9 +14,9 @@ const NavBar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const closeMobileMenu = () => {
-        setIsMobileMenuOpen(false);
-    };
+    // const closeMobileMenu = () => {
+    //     setIsMobileMenuOpen(false);
+    // };
 
     return (
         <div className='nav'>
