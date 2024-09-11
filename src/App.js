@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import NavBar from './components/shared/NavBar/NavBar';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import { useSelector } from 'react-redux';
+import Home from './pages/Home';
+import { IntlProvider } from 'react-intl';
+import { translate } from './translation/translate';
+import Footer from './components/shared/Footer/Footer';
+
+
 
 function App() {
+
+  const language = useSelector((state) => state.language.language);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <IntlProvider
+        locale={language}
+        formats={{ number: 'en' }}
+        messages={translate[language]}>
+        <Router>
+          <NavBar />
+          {/* <ScrollToTop /> */}
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </IntlProvider>
     </div>
   );
 }

@@ -1,0 +1,141 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin-right: 2%;
+    padding: max(1.5%, 2px) 4%;
+    color: #111111;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 8000;
+
+    .mobile-menu-icon {
+        display: none;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .title {
+        font-family: 'Brown Sugar';
+        color: #111111;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        a {
+            color: #111111;
+            font-size: clamp(15px, 1vw, 20px);
+        }
+
+        .svg {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    }
+
+    .links {
+        display: flex;
+        color: #111111;
+    }
+
+    .nav-link {
+        position: relative;
+
+        .inner-link .svg {
+            margin-left: max(5px, 8px);
+            transition: .25s;
+        }
+
+        &:hover {
+            .nav-megamenu,
+            .nav-megamenu2 {
+                display: flex;
+            }
+
+            .inner-link .svg {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    .nav-link a {
+        margin: 0 8px;
+        padding: 10px 10px;
+    }
+
+    .inner-link {
+        font-size: 18px;
+        color: #111111;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-contact {
+        font-size: 10px;
+        color: #111111;
+        padding: 10px 20px;
+        border-radius: 23px;
+        display: flex;
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                background: transparent;
+                border: none;
+                font-size: clamp(.5rem, 1vw, 1rem);
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .signup {
+        color: #fff;
+        background: #111111;
+        padding: 13px 30px;
+        font-size: clamp(.5rem, 1vw, 1rem);
+        border-radius: 25px;
+        margin-left: max(15px, 30px);
+    }
+}
+
+@media(max-width: 1206px) {
+    .nav {
+
+        .nav-link a {
+            margin: 0 3px;
+        }
+
+        .nav-contact {
+            padding: 5px 8px;
+
+            .signup {
+                padding: 15px 20px;
+            }
+
+        }
+    }
+}
+
+
+@media (max-width: 1046px) {
+    .nav {
+        .links,
+        .nav-contact {
+            display: none;
+        }
+
+        .mobile-menu-icon {
+            display: block;
+        }
+    }
+}
