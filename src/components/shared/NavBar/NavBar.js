@@ -5,6 +5,7 @@ import logo from '../../../assets/logo.png'
 import { TiArrowSortedDown } from "react-icons/ti";
 import { MdMenu } from 'react-icons/md'
 import { FormattedMessage } from 'react-intl'
+import AboutMega from '../Megamenus/AboutMegamenu/AboutMega';
 
 
 const NavBar = () => {
@@ -42,6 +43,7 @@ const NavBar = () => {
                     <Link to='/' className='inner-link'>
                     <FormattedMessage id='about' defaultMessage='About' />
                     <TiArrowSortedDown className='svg' /></Link>
+                    <AboutMega />
                 </div>
 
 

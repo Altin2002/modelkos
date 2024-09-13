@@ -287,30 +287,44 @@
 @media (max-width: 480px) {
     .footer {
 
-
         .footer-top .footer-logo {
-            font-size: clamp(.8rem, 1vw, 1rem);
+            font-size: clamp(.6rem, .8vw, .8rem);
             text-align: center;
+
+            img {
+                width: max(50px, 75px);
+            }
         }
 
         .footer-links {
-            text-align: left;
             align-items: center;
             justify-content: center;
+            width: 100%;
+
 
             .footer-column {
                 margin-bottom: max(1rem, 1.5rem);
+                width: 80%;
             }
 
             .right {
                 align-items: center;
                 justify-content: center;
+                width: 100%;
 
                 .right-top {
-
                     flex-direction: column;
                     align-items: center;
-                    text-align: left;
+                    .footer-column {
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                }
+                .right-bottom {
+                    align-items: center;
+                    justify-content: center;
+                    
                 }
             }
         }
@@ -318,11 +332,38 @@
         .footer-bottom {
             flex-direction: column;
 
-            .bottom-left,
-            .bottom-mid,
+            .bottom-left {
+                // text-align: center;
+                // align-items: center;
+                flex-direction: column;
+                padding: max(.2rem, .5rem) 0;
+            }
+
+            .bottom-mid {
+                // text-align: center;
+                // align-items: center;
+                flex-direction: column;
+                padding: max(.2rem, .5rem) 0;
+
+                p {
+                    margin: max(.2rem, .5rem) 0;
+
+                }
+
+                p:nth-child(2) {
+                    border: none;
+                }
+            }
+
             .bottom-right {
-                text-align: center;
-                align-items: center;
+                // text-align: center;
+                // align-items: center;
+                flex-direction: column;
+                padding: max(.2rem, .5rem) 0;
+                p{
+                    margin: max(.5rem, 1rem) 0;
+                }
+
             }
         }
     }

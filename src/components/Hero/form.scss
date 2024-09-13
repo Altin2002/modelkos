@@ -1,0 +1,25 @@
+.form {
+    max-width: 50%;
+    form {
+        display: flex;
+        justify-content: space-between;
+        label {
+            display: flex;
+            justify-content: space-between;
+            select{
+                border: 1px solid #BBBBBB;
+                margin-right: 2rem;
+                padding: max(.5rem, 1rem) max(3rem, 5.5rem);
+                option{
+                    text-align: left;
+                }
+            }
+        }
+        input {
+            padding: max(.5rem, 1rem) max(1rem, 1.8rem);
+            background-color: #111;
+            color: #fff;
+
+        }
+    }
+}
