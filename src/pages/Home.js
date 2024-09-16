@@ -1,11 +1,10 @@
 import React from 'react'
-import Hero from '../components/Hero/Hero'
-// import NavBar from '../components/shared/NavBar/NavBar'
+// import Hero from '../components/Hero/Hero'
 
 const Home = () => {
     return (
         <div className='home-page'>
-            <Hero />
+            {/* <Hero /> */}
 
         </div>
     )

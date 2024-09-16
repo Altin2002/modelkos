@@ -1,0 +1,21 @@
+.mega-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    font-size: clamp(25px, 2vw, 30px);
+    h3 {
+        border-top: 1px solid gray;
+        font-family: "Brown Sugar";
+        padding: 15px 0;
+    }
+    p {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid gray;
+        span {
+            align-items: center;
+            margin: 15px 0;
+        }
+    }
+    
+}

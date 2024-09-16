@@ -6,6 +6,8 @@ import { TiArrowSortedDown } from "react-icons/ti";
 import { MdMenu } from 'react-icons/md'
 import { FormattedMessage } from 'react-intl'
 import AboutMega from '../Megamenus/AboutMegamenu/AboutMega';
+import ModelsMega from '../Megamenus/ModelsMegamenu/ModelsMega';
+import NavbarMobile from '../MobileNav/NavbarMobile';
 
 
 const NavBar = () => {
@@ -15,9 +17,9 @@ const NavBar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    // const closeMobileMenu = () => {
-    //     setIsMobileMenuOpen(false);
-    // };
+    const closeMobileMenu = () => {
+        setIsMobileMenuOpen(false);
+    };
 
     return (
         <div className='nav'>
@@ -51,6 +53,7 @@ const NavBar = () => {
                     <Link to='/' className='inner-link'>
                     <FormattedMessage id='models' defaultMessage='Models' />
                     <TiArrowSortedDown className='svg' /></Link>
+                    <ModelsMega />
                 </div>
 
                 <div className='nav-link'>
@@ -77,7 +80,7 @@ const NavBar = () => {
                     <MdMenu />
             </button>
 
-            {/* <NavbarMobile open={isMobileMenuOpen} close={closeMobileMenu} /> */}
+            <NavbarMobile open={isMobileMenuOpen} close={closeMobileMenu} />
 
         </div>
     )
