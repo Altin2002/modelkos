@@ -185,7 +185,33 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1215px) {
+    .footer {
+        .footer-bottom {
+            .bottom-left {
+                .logo {
+                    h4 {
+                        font-size: clamp(10px, .8vw, 12px);
+                    }
+                }
+            }
+
+            .bottom-mid {
+                p {
+                    font-size: clamp(10px, .8vw, 12px);
+                }
+            }
+
+            .bottom-right {
+                p {
+                    font-size: clamp(10px, .8vw, 12px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
     .footer {
         .footer-top {
             .footer-logo {
@@ -229,6 +255,8 @@
 
             .bottom-left .logo {
                 margin-bottom: 10px;
+                align-items: center;
+
             }
         }
     }
@@ -288,7 +316,7 @@
     .footer {
 
         .footer-top .footer-logo {
-            font-size: clamp(.6rem, .8vw, .8rem);
+            font-size: clamp(1.3rem, 1vw, 1.6rem);
             text-align: center;
 
             img {
@@ -315,16 +343,18 @@
                 .right-top {
                     flex-direction: column;
                     align-items: center;
+
                     .footer-column {
                         align-items: center;
                         justify-content: center;
                     }
-                    
+
                 }
+
                 .right-bottom {
                     align-items: center;
                     justify-content: center;
-                    
+
                 }
             }
         }
@@ -360,9 +390,26 @@
                 // align-items: center;
                 flex-direction: column;
                 padding: max(.2rem, .5rem) 0;
-                p{
+
+                p {
                     margin: max(.5rem, 1rem) 0;
                 }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    .footer {
+        .footer-top .footer-logo {
+            font-size: clamp(.8rem, .8vw, 1rem);
+            text-align: center;
+            padding: 10px;
+
+            img {
+                width: max(40px, 65px);
+                margin: 0 max(.55rem, 1rem);
 
             }
         }

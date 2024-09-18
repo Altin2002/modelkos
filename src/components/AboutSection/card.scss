@@ -1,0 +1,36 @@
+.card {
+    margin: 0 max(.5rem, 1rem);  // Reduced margin for closer cards
+    background-color: #111;
+    padding: max(10px, 15px);
+    color: #fff;
+    border: 0.3px solid #696969;
+    transition: transform 0.3s, border-color .3s;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .card-content {
+        text-align: center;
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #696969;
+        }
+    }
+
+    &.active {
+        transform: scale(1);
+        background-color: #fff;
+        color: #111;
+        position: absolute;
+        right: 0%;
+    }
+}

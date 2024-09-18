@@ -34,19 +34,20 @@ const NavbarMobile = ({ open, close }) => {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/" className="services-nav" onClick={toggleModels}>
-                            Our Work <MdKeyboardArrowDown id="arrow-icon" />
-                        </Link>
-                        {openModels && <ModelsMega />}
+                        <Link to="/">Our Work</Link>
                     </li>
                     <li>
-                        <Link to="/about" className="resources-nav" onClick={toggleAbout}>
+                        <Link to="/about" className="about-nav" onClick={toggleAbout}>
                             About <MdKeyboardArrowDown id="arrow-icon" />
                         </Link>
                         {openAbout && <AboutMega />}
                     </li>
                     <li>
-                        <Link to="/">Models</Link>
+                        <Link to="/" className='models-nav' onClick={toggleModels}>
+                        Models <MdKeyboardArrowDown id="arrow-icon" />
+                        </Link>
+                        {openModels && <ModelsMega />}
+
                     </li>
                     <li>
                         <Link to="/">Academy</Link>
@@ -56,7 +57,7 @@ const NavbarMobile = ({ open, close }) => {
                     </li>
                 </ul>
                 <div className="side-contact">
-                    <button>Contact us</button>
+                    <button className='contact-btn'>Contact us</button>
                 </div>
             </nav>
         </>

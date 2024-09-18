@@ -60,19 +60,18 @@
     .side-contact {
         margin: 25px 0;
         display: flex;
-        font-size: max(1em, 1.5em);
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        button {
-            width: 50%;
+        .contact-btn {
             align-items: center;
             background-color: #111;
+            font-size: max(1em, 1.4em);   
             text-align: center;
             color: #fff;
             margin: 20px;
-            padding: 15px 50px;
+            padding: 30px 100px;
             border: none;
             border-radius: 40px;
             transition: .5s all ease-in-out;
@@ -85,5 +84,11 @@
 @media (min-width: 1030px) {
     .navbar-mobile {
         display: none;
+    }
+}
+
+@media (max-width: 368px) {
+    .navbar-mobile {
+        width: 200px;
     }
 }
