@@ -1,0 +1,114 @@
+.media-kos {
+    margin: max(3em, 4em) max(2%, 4%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        h1 {
+            font-size: clamp(40px, 5vw, 100px);
+            font-family: "Brown Sugar";
+            font-weight: 400;
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        margin: 3em 0;
+
+        .left {
+            margin-right: 3em;
+
+            .logo {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 45px;
+                    margin-right: .5rem;
+                }
+
+                h1 {
+                    font-weight: 500;
+                    font-size: clamp(28px, 1vw, 45px);
+                }
+            }
+
+            .social-media {
+                margin: 3em 0;
+
+                h1 {
+                    font-weight: 400;
+                    font-family: "Brown Sugar";
+                    font-size: clamp(40px, 5.5vw, 100px);
+                }
+
+                p {
+                    margin: 2em 0;
+                    font-size: clamp(14px, 1vw, 15px);
+                }
+
+                button {
+                    margin: 2em 0;
+                    background-color: #111;
+                    color: #fff;
+                    padding: max(.5rem, .8rem) max(1.5rem, 2rem);
+                }
+            }
+        }
+
+        .right {
+            img {
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .media-kos {
+        .title {
+            width: 80%;
+            h1{
+                text-align: center;
+            }
+        }
+        .content {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .left {
+                width: 100%;
+
+                .logo {
+                    justify-content: center;
+                }
+
+                .social-media {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h1 {
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

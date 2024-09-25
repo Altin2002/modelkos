@@ -8,8 +8,8 @@ const Card = ({ image, name, professions, date, isActive, isDark }) => {
             <img src={image} alt={name} />
             <div className="card-content">
                 <h3>{name}</h3>
-                <p>{professions.join(" • ")}</p>
-                <p>{date}</p>
+                <p className='professions'>{professions.join(" • ")}</p>
+                <p className='date'>{date}</p>
             </div>
         </div>
     );

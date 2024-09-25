@@ -1,0 +1,110 @@
+@import '../../../node_modules/react-tabs/style/react-tabs.scss';
+
+.models-section {
+    margin: max(2em, 3em) max(2%, 4%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: max(1rem, 2rem);
+
+        h1 {
+            font-size: clamp(40px, 5vw, 100px);
+            font-family: "Brown Sugar";
+            font-weight: 400;
+
+        }
+    }
+
+    .tabs {
+        .tab-list {
+            display: flex;
+            justify-content: center;
+            margin: max(2rem, 3rem);
+        }
+
+        .tab-panel {
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+
+            .card {
+                margin-top: max(3em, 4em);
+                background-color: #fff;
+                color: #111;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                height: 70%;
+
+                h1 {
+                    font-family: "Brown Sugar";
+                    margin-bottom: max(1rem, 2rem);
+                }
+            }
+
+            .grid-item {
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .button {
+        button {
+            margin: 2em 0;
+            background-color: #111;
+            color: #fff;
+            padding: max(.5rem, .8rem) max(1.5rem, 2rem);
+        }
+    }
+}
+
+@media (max-width: 975px) {
+    .models-section {
+        .tabs {
+            .tab-panel {
+                .grid-container {
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .grid-item {
+                        // width: 80%;
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            width: 70%;
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .models-section {
+        .tabs {
+            .tab-panel {
+                .grid-container {
+                    grid-template-columns: repeat(1, 1fr);
+                    .card{
+                        width: 50%;
+                        justify-self: center;
+                    }
+                }
+            }
+        }
+    }
+}

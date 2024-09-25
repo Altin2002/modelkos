@@ -2,37 +2,11 @@ import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import './aboutSection.scss'
 import 'swiper/css';
-import 'swiper/css/navigation';  // For navigation buttons
-import 'swiper/css/pagination';  // For pagination dots
+import { Pagination } from 'swiper/modules';
+import 'swiper/css/pagination';  
 import Card from './Card';
+import { models } from './aboutData';
 
-const models = [
-    {
-        image: require('../../assets/dea.png'),
-        name: 'Anda Lleshi',
-        professions: ['Model', 'Photography', 'Artist'],
-        date: '19 May 2022',
-    },
-    {
-        image: require('../../assets/blerta.png'),
-        name: 'Driada Lakna',
-        professions: ['Model', 'Photography', 'Artist'],
-        date: '19 May 2022',
-    },
-    {
-        image: require('../../assets/dea.png'),
-        name: 'Anda Lleshi',
-        professions: ['Model', 'Photography', 'Artist'],
-        date: '19 May 2022',
-    },
-    {
-        image: require('../../assets/blerta.png'),
-        name: 'Driada Lakna',
-        professions: ['Model', 'Photography', 'Artist'],
-        date: '19 May 2022',
-    },
-    // Add more model data
-];
 
 const AboutSection = () => {
 
@@ -51,10 +25,21 @@ const AboutSection = () => {
             <div className='right'>
                 <div className='carousel'>
                     <Swiper className='swiper'
-                        spaceBetween={10}  
-                        slidesPerView={2}
-                        pagination={{ clickable: true }}  // Enable pagination dots
+                        spaceBetween={5}  
+                        slidesPerView={1}
+                        modules={[Pagination]}
+                        pagination={{ clickable: true }} 
                         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                        breakpoints={{
+                            // 768: {
+                            //     slidesPerView: 2,
+                            //     spaceBetween: 20
+                            // },
+                            1055: {
+                                slidesPerView: 2, 
+                                spaceBetween: 20
+                            },
+                        }}
                     >
                         {models.map((model, index) => (
                             <SwiperSlide key={index}>

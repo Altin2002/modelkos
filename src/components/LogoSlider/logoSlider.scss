@@ -1,0 +1,20 @@
+.logo-slider {
+    display: flex;
+    flex-direction: column;
+    margin: 0 max(2%, 4%);
+    // align-items: center;
+    .title {
+        align-self: center;
+        margin: 2em 0;
+        font-size: clamp(10px, 1vw, 15px);
+    }
+    .button {
+        align-self: center;
+        button {
+            margin: 2em 0;
+            background-color: #111;
+            color: #fff;
+            padding: max(.5rem, .8rem) max(1.5rem, 2rem);
+        }
+    }
+}

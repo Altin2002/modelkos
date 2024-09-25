@@ -1,0 +1,33 @@
+.blog-card {
+    margin: 0 max(1rem, 3rem);
+    padding: max(10px, 14px);
+    background-color: #fff;
+    color: #111;
+    transition: transform 0.3s, border-color .3s;
+    
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .blog-card-content {
+        text-align: center;
+
+        h3 {
+            text-align: left;
+            font-size: clamp(15px, 1vw, 20px);
+            margin: 10px 0;
+            font-weight: 500;
+
+        }
+
+        p {
+            font-size: clamp(13px, .8vw, 15px);
+            color: #696969;
+            padding: 10px 0;
+            text-align: left;
+
+        }   
+    }
+}

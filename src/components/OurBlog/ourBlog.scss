@@ -1,0 +1,81 @@
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    margin: max(2em, 4em) max(2%, 4%);
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: max(1rem, 2rem);
+
+        h1 {
+            font-size: clamp(40px, 5vw, 100px);
+            font-family: "Brown Sugar";
+            font-weight: 400;
+
+        }
+    }
+
+    .carousel {
+        display: flex;
+        flex-wrap: wrap;
+
+        .swiper {
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: transparent;
+                background-color: transparent;
+                border: 1px solid #646363;
+                border-radius: 50%;
+            }
+
+            
+            .swiper-button-next {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('../../assets/arrow-right.png');
+                
+            }
+
+            
+            .swiper-button-prev {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('../../assets/arrow-left.png');
+                
+            }
+
+            .swiper-pagination {
+                position: absolute;
+                text-align: center;
+                z-index: 100;
+            }
+
+            .swiper-pagination-bullet {
+                width: 12px;
+                height: 12px;
+                margin: 0 5px;
+                background-color: rgb(199, 194, 194);
+                opacity: 0.5;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #111;
+                opacity: 1;
+            }
+        }
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+
+        button {
+            margin: 2em 0;
+            background-color: #111;
+            color: #fff;
+            padding: max(.5rem, .8rem) max(1.5rem, 2rem);
+        }
+    }
+}
