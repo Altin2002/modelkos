@@ -51,8 +51,8 @@ const ModelsCarousel = () => {
                             }}
                         >
                             {modelsCard.map((model, index) => (
-                                <SwiperSlide key={index}>
-                                    <Card
+                                <SwiperSlide className='cards' key={index}>
+                                    <Card className='card'
                                         image={model.image}
                                         title={model.title}
                                         name={model.name}

@@ -1,0 +1,92 @@
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: max(1rem, 2rem) max(2%, 4%);
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: max(1rem, 2rem);
+
+        h1 {
+            font-size: clamp(40px, 3vw, 80px);
+            font-family: "Brown Sugar";
+            font-weight: 400;
+        }
+    }
+    .text {
+        margin: max(1rem, 2rem) 0;
+    }
+    .input-text {
+        .input {
+            padding: max(.5rem, 1rem) max(10rem, 18rem);
+            border: 1px solid rgb(161, 158, 158);
+            border-radius: 8px;
+            text-align: left;
+        }
+        button {
+            background-color: #111;
+            color: #fff;
+            padding: max(.5rem, 1rem) max(1.5rem, 2rem);
+            border-radius: 8px;
+            cursor: pointer;
+
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .subscribe {
+        .title {
+            h1 {
+                font-size: clamp(25px, 2vw, 50px);
+            }
+        }
+        .input-text {
+            .input { 
+            padding: max(.5rem, 1rem) max(8rem, 12rem);
+
+            }
+        }
+    }
+}
+
+@media (max-width: 778px) {
+    .subscribe {
+        .title {
+            h1 {
+                font-size: clamp(25px, 2vw, 50px);
+            }
+        }
+        .text {
+            p {
+                font-size: clamp(15px, 1vw, 20px);
+
+            }
+        }
+        .input-text {
+            .input { 
+            padding: max(.5rem, 1rem) max(2rem, 8rem);
+
+            }
+        }
+    }
+}
+
+@media (max-width: 595px) {
+    .subscribe {
+        
+        .input-text {
+            display: flex;
+            flex-direction: column;
+            .input { 
+            padding: max(.5rem, 1rem) max(2rem, 6rem);
+
+            }
+            button {
+                margin-top: max(.5rem, 1rem);
+            }
+            
+        }
+    }
+}

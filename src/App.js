@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import { IntlProvider } from 'react-intl';
 import { translate } from './translation/translate';
 import Footer from './components/shared/Footer/Footer';
+import { AboutPage } from './pages/AboutPage';
+import ScrollToTop from './ScrollToTop/ScrollToTop'
 
 
 
@@ -21,9 +23,10 @@ function App() {
         messages={translate[language]}>
         <Router>
           <NavBar />
-          {/* <ScrollToTop /> */}
+          <ScrollToTop />
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/about' element={<AboutPage />} />
           </Routes>
           <Footer />
         </Router>

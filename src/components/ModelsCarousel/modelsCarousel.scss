@@ -1,8 +1,63 @@
 .models-carousel {
-    margin: max(3em, 5em) max(2%, 4%);
+    display: flex;
+    flex-direction: column;
+    margin: max(3em, 6em) 0;
+
     .title {
-        font-family: "Brown Sugar";
-        font-size: clamp(45px, 3vw, 80px);
-        font-weight: 400;
+        margin: 0 max(2%, 4%);
+
+        h1 {
+
+            font-family: "Brown Sugar";
+            font-size: clamp(45px, 5vw, 100px);
+            font-weight: 400;
+        }
+    }
+
+    .content {
+
+        .tabs {
+            .tab-list {
+                margin: 0 max(2%, 4%);
+            }
+
+            .tab-panel {
+
+                .swiper {
+                    margin: 0 max(2%, 4%);
+                    .cards {
+                        .card {
+                            margin: 0;
+                        }
+                    }
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        color: #111;
+                        margin: 0 -20px;
+
+                    }
+
+
+                    .swiper-pagination {
+                        position: absolute;
+                        text-align: center;
+                        z-index: 100;
+                    }
+
+                    .swiper-pagination-bullet {
+                        width: 12px;
+                        height: 12px;
+                        margin: 0 5px;
+                        background-color: rgb(199, 194, 194);
+                        opacity: 0.5;
+                    }
+
+                    .swiper-pagination-bullet-active {
+                        background-color: #111;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 }

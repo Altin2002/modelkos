@@ -33,12 +33,11 @@
     }
 
     &.active {
-        transform: scale(1);
+        border-top: 0.3px solid #696969;
         background-color: #fff;
         color: #111;
         position: absolute;
-        top: -3rem;
-        // right: -50%;
+        top: -2rem;
         z-index: 100;
     }
 }

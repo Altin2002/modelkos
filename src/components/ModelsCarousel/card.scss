@@ -1,34 +1,76 @@
-.card {
-    margin: 0 max(.5rem, 1rem);
-    background-color: #111;
-    padding: max(10px, 14px);
-    color: #fff;
-    border: 0.3px solid #696969;
+.models-card {
+    margin: 2rem max(.5rem, 1rem);
+    background-color: #fff;
+    color: #111;
+    border: 0.3px solid #C1C1C1;
     transition: transform 0.3s, border-color .3s;
-    
+
 
     img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
 
+    .btn {
+        position: absolute;
+        left: 8%;
+        top: 52%;
+        margin: 2em 0;
+        border: none;
+        background-color: #111;
+        color: #fff;
+        padding: max(.5rem, .8rem) max(1.5rem, 2rem);
+        cursor: pointer;
+        display: none;
+    }
+
     .card-content {
-        text-align: center;
+        text-align: left;
 
-        h3 {
-            font-family: "Brown Sugar";
-            font-size: 1.2rem;
-            margin: 10px 0;
+        .position {
+            color: #C1C1C1;
+            padding: .5rem 1rem;
         }
 
-        p {
-            font-size: 0.9rem;
-            color: #696969;
-            padding: 10px 0;
-        }
+        .down-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 max(.5rem, .8rem);
 
-        .date {
-            font-family: "Brown Sugar";
+            .left {
+                h3 {
+                    font-family: "Brown Sugar";
+                    font-size: clamp(15px, 1.2vw, 22px);
+                }
+
+                p {
+                    font-size: clamp(10px, 1vw, 15px);
+                    padding: max(1.5rem, .8rem) 0;
+                }
+            }
+
+            .right {
+                p {
+                    font-size: clamp(10px, 1vw, 15px);
+                }
+
+                .views {
+
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: max(1.5rem, .8rem) 0;
+                }
+            }
+
+        }
+    }
+
+    &:hover {
+        background-color: #111;
+        color: #fff;
+        .btn {
+            display: block;
         }
     }
 
@@ -37,7 +79,7 @@
         background-color: #fff;
         color: #111;
         position: absolute;
-        top: -3rem;
+        // top: -3rem;
         // right: -50%;
         z-index: 100;
     }

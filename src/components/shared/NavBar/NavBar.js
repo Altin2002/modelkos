@@ -42,7 +42,7 @@ const NavBar = () => {
                 </div>
 
                 <div className='nav-link'>
-                    <Link to='/' className='inner-link'>
+                    <Link to='/about' className='inner-link'>
                     <FormattedMessage id='about' defaultMessage='About' />
                     <TiArrowSortedDown className='svg' /></Link>
                     <AboutMega />

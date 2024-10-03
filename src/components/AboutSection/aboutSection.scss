@@ -1,9 +1,9 @@
 .about-section {
-    margin: max(8em, 15em) max(2%, 4%);
+    margin: max(8em, 10em) max(2%, 4%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: fit-content;
+    // height: fit-content;
 
     .left {
         width: 50%;
@@ -25,9 +25,12 @@
         // align-items: center;
 
         .carousel {
+
             .swiper {
+                padding: 2.5rem 0rem;
+
                 .swiper-pagination {
-                    bottom: 0px;
+                    bottom: 10px;
                     left: -220px;
                     position: absolute;
                     text-align: center;
@@ -79,7 +82,7 @@
                         text-align: center;
                         z-index: 100;
                     }
-    
+
                     .swiper-pagination-bullet {
                         width: 12px;
                         height: 12px;
@@ -87,7 +90,7 @@
                         background-color: rgb(199, 194, 194);
                         opacity: 0.5;
                     }
-    
+
                     .swiper-pagination-bullet-active {
                         background-color: #111;
                         opacity: 1;
