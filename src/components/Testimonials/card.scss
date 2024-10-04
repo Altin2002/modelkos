@@ -1,0 +1,19 @@
+.testimonials-card {
+    margin-top: max(1rem, 2rem);
+    background-color: #fff;
+    h1{
+        color: #707070;
+        font-family: 'Brown Sugar', sans-serif;
+        margin-bottom: max(1rem, 2rem);
+        font-size: clamp(20px, 2vw, 47px);
+
+    }
+    p{
+        margin-bottom: max(1rem, 2rem);
+    }
+
+    .team {
+        display: flex;
+        justify-content: space-between;
+    }
+}
