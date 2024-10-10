@@ -13,7 +13,7 @@ const Hero = () => {
                     <h1 className=' h1-up'>HIRE A MODEL OR</h1>
                     <h1 className='h1-down'>BECOME ONE</h1>
                 </div>
-
+ 
                 <div className='form'>
                     <Form />
                 </div>

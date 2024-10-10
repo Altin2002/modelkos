@@ -23,3 +23,19 @@
         }
     }
 }
+
+@media (max-width: 1120px) {
+    .form {
+        display: flex;
+        align-self: center;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            label {
+                padding: 2rem 0;
+            }
+        }
+    }
+}

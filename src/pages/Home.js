@@ -9,12 +9,12 @@ import ModelsCarousel from '../components/ModelsCarousel/ModelsCarousel'
 import WhatWeOffer from '../components/WhatWeOffer/WhatWeOffer'
 import Subscribe from '../components/Subscribe/Subscribe'
 import Testimonials from '../components/Testimonials/Testimonials'
-// import Hero from '../components/Hero/Hero'
+import Hero from '../components/Hero/Hero'
 
 const Home = () => {
     return (
         <div className='home-page'>
-            {/* <Hero /> */}
+            <Hero />
             <AboutSection />
             <Models />
             <Banner />
